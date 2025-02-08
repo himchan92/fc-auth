@@ -29,6 +29,7 @@ dependencies {
     implementation 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0' // API 문서화 도와주는 툴
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-webflux', version: '3.3.3' //비동기 방식 지원
 }
 
 tasks.named('test') {
