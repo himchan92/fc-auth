@@ -1,5 +1,8 @@
 ## CHANGE LOG
 
+### 4-1 JPA를 활용한 기본 CRUD 구현
+- [X] lombok & simple jpa 구현
+
 #### DB 구성
 - [X] POSTGRE DB 연동 및 JPA 디펜던시 설정
 
