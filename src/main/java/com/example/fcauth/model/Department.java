@@ -5,6 +5,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import lombok.Getter;
 
 @Entity
@@ -19,5 +21,7 @@ public class Department {
     private String deptName;
 
     @Schema(example = "123456", description = "담당 조직장 임직원 ID")
-    private Long teamLeadId;
+    @OneToOne // 1대1 매핑
+    @JoinColumn(name = "team_lead_id", referencedColumnName = "id") //Employee 테이블 id PK컬럼과 매핑
+    private Employee teamLead;
 }
