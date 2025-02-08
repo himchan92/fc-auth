@@ -14,4 +14,17 @@ public class EmployeeService {
     public List<Employee> listEmpoyees() {
         return employeeRepository.findAll(); //전체 조회 JPA 메소드
     }
+
+    //직원등록
+    public Employee createEmployee(String firstName, String lastName, Long departmentId) {
+        //빌더패턴 : 생성자 비슷하게 가독성있게 롬복에서 지원
+        Employee employee = Employee.builder()
+            .firstName(firstName)
+            .lastName(lastName)
+            .departmentId(departmentId)
+            .build();
+        employeeRepository.save(employee);
+
+        return employee;
+    }
 }
