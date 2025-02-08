@@ -2,6 +2,7 @@ package com.example.fcauth.controller;
 
 import com.example.fcauth.model.Employee;
 import com.example.fcauth.service.EmployeeService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.apache.coyote.Response;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
+@Tag(name = "Basics", description = "기본 관리 API") // SWAGGER 에서 같은 그룹 조회되게 설정
 public class EmployeeController {
 
     private final EmployeeService employeeService;
