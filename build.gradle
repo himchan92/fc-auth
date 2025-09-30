@@ -32,6 +32,9 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok'
     testAnnotationProcessor 'org.projectlombok:lombok'
 
+    //스프링 ui
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     runtimeOnly 'com.mysql:mysql-connector-j'
