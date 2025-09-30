@@ -2,6 +2,7 @@ package com.example.fcauth.controller;
 
 import com.example.fcauth.model.Employee;
 import com.example.fcauth.service.EmployeeService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
+@Tag(name = "Basics", description = "기본 관리 API") //스웨거 설정된 것으로 패키지화
 public class EmployeeController {
 
     private final EmployeeService employeeService;
