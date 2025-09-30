@@ -8,10 +8,12 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import java.util.Set;
+import lombok.Builder;
 import lombok.Getter;
 
 @Entity //컬럼과 테이블 매핑해서 DB 테이블생성
 @Getter
+@Builder //생성자를 대신해서 가독성있게 객체생성 역할
 public class Employee {
 
     @Id //PK설정

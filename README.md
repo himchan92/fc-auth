@@ -4,6 +4,12 @@
 
 ## CHANGE LOG
 
+#### 4 - 3 kakao Social Login 1
+
+✅ 회원 등록
+✅ 카카오 소셜 로그인 지원
+
+
 #### 4 - 2 Swagger 문서와 JPA Part2
 
 ✅ Swagger 연동
